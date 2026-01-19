@@ -25,11 +25,6 @@ const Chatbot: React.FC = () => {
   // Initialize Gemini Chat Session
   useEffect(() => {
     try {
-      if (!process.env.API_KEY) {
-        console.warn("API_KEY not found in environment.");
-        return;
-      }
-
       const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
       
       // Build context from products

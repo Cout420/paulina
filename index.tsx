@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import './index.css'; // Optional if creating custom css, but we rely on tailwind CDN mostly for this task, though standard setup implies this.
 
 // FIX: Polyfill para evitar crash "process is not defined" no navegador
 if (typeof process === 'undefined') {
